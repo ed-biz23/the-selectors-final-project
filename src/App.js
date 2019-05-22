@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment, useState, useEffect } from 'react';
+import JobDetails from './component/JobDetails'
 import './App.css';
 
 function App() {
+  const [jobs, setJobs] = useState([]);
+  const [offset, setOffset] = useState(0)
+
+  useEffect(() => {
+    fetch(`https://data.cityofnewyork.us/resource/kpav-sd4t.json?$limit=20&$offset=${offset}`)
+      .then(response => response.json())
+      .then(data => {
+        setJobs(data); // set users in state
+    });
+  }, [offset]); 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="App">
+        <h1>Jobs in NYC</h1>
+        {jobs.map(job => (
+          <JobDetails job={job} />
+        ))}
+        <button onClick={() => setOffset(offset + 20)}>Next</button>
+      </div>
+    </Fragment>
   );
 }
 
