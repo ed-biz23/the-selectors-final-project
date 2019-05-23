@@ -1,0 +1,17 @@
+import React from 'react';
+
+function About() {
+    return (
+        <div>
+        <h2>About Page</h2>
+        <p>This is mostly about us.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet, felis vel egestas tristique, sapien tellus lobortis metus, ac semper erat felis non nisl. Fusce quis odio bibendum eros lobortis vestibulum eget id mi. Duis in pellentesque risus. Etiam lectus tellus, posuere et pulvinar in, viverra vel mi. Pellentesque nec nisi leo. Vivamus ac mauris ex. Ut iaculis turpis eu turpis congue, a condimentum felis facilisis. Donec ornare sem dolor, eget auctor felis aliquet nec. Maecenas sollicitudin ante ut dapibus molestie. Quisque sed egestas lacus. Etiam odio est, rhoncus in massa luctus, placerat feugiat nulla. Aenean vestibulum sapien vel volutpat convallis. Aliquam convallis, risus quis facilisis consectetur, dolor neque porttitor arcu, nec aliquet tellus eros eu purus.</p>
+        <p>Morbi lacinia ante non justo eleifend, quis maximus augue molestie. Etiam ac ex faucibus, vestibulum erat eu, ornare leo. Nam mattis nulla elit, non porta felis eleifend sed. Donec pulvinar volutpat placerat. Quisque nibh dolor, elementum eget purus ac, congue interdum nisl. Duis pulvinar sed turpis non placerat. Proin dapibus neque a urna porta sollicitudin. Donec in rhoncus lectus. Proin vel nunc fermentum justo tristique accumsan quis at neque. Praesent nec purus eleifend, dapibus quam sit amet, vestibulum sem. Sed ac sollicitudin arcu.</p>
+        <p>Nulla interdum gravida velit. Nam in lectus ac leo pretium sagittis. Duis elementum, sem id varius faucibus, massa orci malesuada arcu, nec sagittis nulla sem sed lacus. Sed at est placerat, sodales tellus sed, congue neque. Donec efficitur metus ut lorem imperdiet, sit amet rhoncus mi condimentum. Pellentesque quis hendrerit sem. Praesent libero orci, tristique ut venenatis feugiat, condimentum at libero. Sed eget diam vestibulum nisi efficitur feugiat. Phasellus sit amet ultricies erat. Cras a purus nulla. Sed non consequat diam, non convallis neque. Proin commodo nulla eget ex eleifend, cursus eleifend justo ultrices. Nam ut tristique mi.</p>
+        <p>Donec vulputate rhoncus felis. Duis eu molestie orci. Nam lobortis massa quis eros interdum sollicitudin. Donec id elit augue. Aliquam ultricies interdum orci eget porttitor. Aliquam vehicula, metus sed rhoncus congue, erat dolor vulputate velit, congue hendrerit ante felis ut massa. Proin dignissim auctor ex porta faucibus. Nunc elementum tortor ut enim condimentum feugiat. Nunc sed ipsum et lectus tincidunt pretium ut et felis. Vivamus ligula augue, sodales congue rhoncus et, ultrices et ex. Proin lacinia viverra cursus.</p>
+        <p>Duis vel porta massa. Fusce ultricies ante lorem, at ultrices odio commodo vel. Suspendisse efficitur justo vel blandit aliquam. Fusce in dui condimentum eros commodo posuere. Aliquam at faucibus enim. Donec molestie, risus nec finibus aliquam, lorem libero vehicula orci, convallis molestie purus metus sed augue. Quisque at tortor in turpis accumsan ultricies. Proin ac suscipit mi. Sed porta placerat ligula nec ultricies. Duis ullamcorper diam eros, nec sodales sapien posuere at. Aenean sit amet condimentum dui.</p>
+      </div>
+    )
+}
+
+export default About;

@@ -1,29 +1,28 @@
-import React, { Fragment, useState, useEffect } from 'react';
-import JobDetails from './component/JobDetails'
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import NavigationBar from './components/NavigationBar';
+
+import Home from './pages/Home';
+import About from './pages/About';
+
+import Layout from './layouts/Layout';
+import { Jumbotron } from './layouts/Jumbotron';
 
 function App() {
-  const [jobs, setJobs] = useState([]);
-  const [offset, setOffset] = useState(0)
-
-  useEffect(() => {
-    fetch(`https://data.cityofnewyork.us/resource/kpav-sd4t.json?$limit=20&$offset=${offset}`)
-      .then(response => response.json())
-      .then(data => {
-        setJobs(data); // set users in state
-    });
-  }, [offset]); 
-
   return (
-    <Fragment>
-      <div className="App">
-        <h1>Jobs in NYC</h1>
-        {jobs.map(job => (
-          <JobDetails job={job} />
-        ))}
-        <button onClick={() => setOffset(offset + 20)}>Next</button>
-      </div>
-    </Fragment>
+    <React.Fragment>
+      <Router>
+        <NavigationBar />
+        <Jumbotron />
+        <Layout>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+            </Switch>
+        </Layout>
+      </Router>
+    </React.Fragment>
   );
 }
 
