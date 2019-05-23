@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/the-selectors-final-project/static/js/main.846f1f3e.chunk.js",
+    "main.js.map": "/the-selectors-final-project/static/js/main.846f1f3e.chunk.js.map",
+    "runtime~main.js": "/the-selectors-final-project/static/js/runtime~main.f31bf015.js",
+    "runtime~main.js.map": "/the-selectors-final-project/static/js/runtime~main.f31bf015.js.map",
+    "static/css/2.266e55a5.chunk.css": "/the-selectors-final-project/static/css/2.266e55a5.chunk.css",
+    "static/js/2.4648cb7f.chunk.js": "/the-selectors-final-project/static/js/2.4648cb7f.chunk.js",
+    "static/js/2.4648cb7f.chunk.js.map": "/the-selectors-final-project/static/js/2.4648cb7f.chunk.js.map",
+    "index.html": "/the-selectors-final-project/index.html",
+    "precache-manifest.2b1863d853435079487793201782e5f4.js": "/the-selectors-final-project/precache-manifest.2b1863d853435079487793201782e5f4.js",
+    "service-worker.js": "/the-selectors-final-project/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/the-selectors-final-project/static/css/2.266e55a5.chunk.css.map",
+    "static/media/nyc.jpg": "/the-selectors-final-project/static/media/nyc.78c4b56e.jpg"
+  }
+}
